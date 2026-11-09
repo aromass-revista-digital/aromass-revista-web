@@ -9,6 +9,7 @@
   "orientation": "portrait",
   "background_color": "#FAF8F5",
   "theme_color": "#92400E",
+  "categories": ["shopping", "lifestyle"],
   "icons": [
     {
       "src": "/pwa-192x192.png",

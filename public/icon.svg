@@ -1,40 +1,51 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
   <defs>
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="bgCanvas" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#FAF8F5"/>
-      <stop offset="100%" stop-color="#EFE8E1"/>
+      <stop offset="100%" stop-color="#F3EFEA"/>
     </linearGradient>
-    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#D97706"/>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#B45309"/>
+      <stop offset="50%" stop-color="#D97706"/>
       <stop offset="100%" stop-color="#92400E"/>
     </linearGradient>
   </defs>
-  <!-- Background with subtle luxury border -->
-  <rect width="512" height="512" rx="100" fill="url(#bgGrad)"/>
-  <rect x="24" y="24" width="464" height="464" rx="80" fill="none" stroke="#D4C7BA" stroke-width="4"/>
+
+  <!-- Fondo de lujo crema cálido -->
+  <rect width="512" height="512" rx="104" fill="url(#bgCanvas)"/>
   
-  <!-- Stylized Fragrance Silhouette -->
-  <g transform="translate(196, 90)">
-    <!-- Spray cap & nozzle -->
-    <rect x="50" y="10" width="20" height="28" rx="4" fill="#1C1917"/>
-    <rect x="42" y="38" width="36" height="18" rx="3" fill="url(#goldGrad)"/>
-    <circle cx="60" cy="18" r="4" fill="#D97706"/>
-    <!-- Bottle shoulders & body -->
-    <path d="M 20 70 C 20 56, 100 56, 100 70 L 108 210 C 108 222, 12 222, 12 210 Z" fill="url(#goldGrad)" opacity="0.9"/>
-    <!-- Inner highlight -->
-    <path d="M 28 85 L 34 200" stroke="#FAF8F5" stroke-width="6" stroke-linecap="round" opacity="0.6"/>
-    <!-- Scent droplets -->
-    <circle cx="20" cy="25" r="4" fill="#B45309" opacity="0.7"/>
-    <circle cx="10" cy="12" r="3" fill="#D97706" opacity="0.5"/>
-    <circle cx="100" cy="20" r="3.5" fill="#B45309" opacity="0.6"/>
+  <!-- Marco perimetral dorado sutil -->
+  <rect x="28" y="28" width="456" height="456" rx="80" fill="none" stroke="#E8E1DA" stroke-width="4"/>
+  <rect x="36" y="36" width="440" height="440" rx="72" fill="none" stroke="#D97706" stroke-width="1.5" stroke-opacity="0.4"/>
+
+  <!-- Emblema de Esencia Aromática (Silueta de Frasco Ámbar y Gota Central) -->
+  <g transform="translate(256, 175)">
+    <!-- Difusor / Válvula dorada -->
+    <rect x="-14" y="-72" width="28" height="20" rx="3" fill="#1C1917"/>
+    <rect x="-24" y="-52" width="48" height="14" rx="2" fill="url(#goldGradient)"/>
+    <circle cx="0" cy="-62" r="3" fill="#D97706"/>
+    
+    <!-- Hombros y Cuerpo de Frasco Ámbar -->
+    <path d="M -54 -20 C -54 -38, 54 -38, 54 -20 L 62 70 C 62 82, -62 82, -62 70 Z" fill="url(#goldGradient)"/>
+    
+    <!-- Brillo lateral -->
+    <path d="M -44 -6 L -48 62" stroke="#FFF7ED" stroke-width="4" stroke-linecap="round" opacity="0.45"/>
+    
+    <!-- Gota de esencia central -->
+    <path d="M 0 -6 C 14 16, 20 28, 20 38 C 20 50, 10 58, 0 58 C -10 58, -20 50, -20 38 C -20 28, -14 16, 0 -6 Z" fill="#FAF8F5" opacity="0.95"/>
   </g>
 
-  <!-- Typography: AROMASS -->
-  <text x="256" y="375" text-anchor="middle" font-family="'Playfair Display', Georgia, serif" font-size="52" font-weight="700" letter-spacing="8" fill="#1C1917">
+  <!-- Logotipo Tipográfico Oficial AROMASS -->
+  <text x="256" y="348" text-anchor="middle" font-family="'Playfair Display', Georgia, 'Times New Roman', serif" font-size="52" font-weight="700" letter-spacing="10" fill="#1C1917">
     AROMASS
   </text>
-  <text x="256" y="415" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="600" letter-spacing="5" fill="#92400E">
+  
+  <!-- Subtítulo de Línea -->
+  <text x="256" y="392" text-anchor="middle" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="16" font-weight="600" letter-spacing="6" fill="#92400E">
     REVISTA DIGITAL
   </text>
-  <line x1="180" y1="440" x2="332" y2="440" stroke="#D4C7BA" stroke-width="2"/>
+
+  <!-- Separador ornamental -->
+  <line x1="184" y1="416" x2="328" y2="416" stroke="#D4C7BA" stroke-width="1.5"/>
+  <circle cx="256" cy="416" r="3" fill="#D97706"/>
 </svg>

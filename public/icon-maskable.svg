@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgCanvasMask" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FAF8F5"/>
+      <stop offset="100%" stop-color="#F3EFEA"/>
+    </linearGradient>
+    <linearGradient id="goldGradMask" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#B45309"/>
+      <stop offset="50%" stop-color="#D97706"/>
+      <stop offset="100%" stop-color="#92400E"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Fondo completo sin recorte para soporte maskable de Android -->
+  <rect width="512" height="512" fill="url(#bgCanvasMask)"/>
+
+  <!-- Todo el contenido dentro de la zona segura del 80% (diámetro 400px en el centro) -->
+  <g transform="translate(256, 185) scale(0.92)">
+    <!-- Difusor / Válvula dorada -->
+    <rect x="-14" y="-72" width="28" height="20" rx="3" fill="#1C1917"/>
+    <rect x="-24" y="-52" width="48" height="14" rx="2" fill="url(#goldGradMask)"/>
+    <circle cx="0" cy="-62" r="3" fill="#D97706"/>
+    
+    <!-- Hombros y Cuerpo de Frasco Ámbar -->
+    <path d="M -54 -20 C -54 -38, 54 -38, 54 -20 L 62 70 C 62 82, -62 82, -62 70 Z" fill="url(#goldGradMask)"/>
+    <path d="M -44 -6 L -48 62" stroke="#FFF7ED" stroke-width="4" stroke-linecap="round" opacity="0.45"/>
+    <path d="M 0 -6 C 14 16, 20 28, 20 38 C 20 50, 10 58, 0 58 C -10 58, -20 50, -20 38 C -20 28, -14 16, 0 -6 Z" fill="#FAF8F5" opacity="0.95"/>
+  </g>
+
+  <!-- Logotipo Tipográfico Oficial AROMASS en zona segura -->
+  <text x="256" y="342" text-anchor="middle" font-family="'Playfair Display', Georgia, 'Times New Roman', serif" font-size="46" font-weight="700" letter-spacing="8" fill="#1C1917">
+    AROMASS
+  </text>
+  
+  <text x="256" y="380" text-anchor="middle" font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" letter-spacing="5" fill="#92400E">
+    REVISTA DIGITAL
+  </text>
+
+  <line x1="190" y1="402" x2="322" y2="402" stroke="#D4C7BA" stroke-width="1.5"/>
+</svg>

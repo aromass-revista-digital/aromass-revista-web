@@ -1,13 +1,17 @@
 // AROMASS Service Worker - Estrategia Híbrida: Network-First para HTML/Precios, Cache-First para estáticos con hash
-const CACHE_NAME = 'aromass-cache-v1.0.1';
+const CACHE_NAME = 'aromass-cache-v2.2.0';
 
 const STATIC_PRECACHE = [
   '/',
   '/index.html',
+  '/manifest.json',
   '/manifest.webmanifest',
   '/pwa-192x192.png',
   '/pwa-512x512.png',
+  '/pwa-maskable-512x512.png',
   '/apple-touch-icon.png',
+  '/favicon-32x32.png',
+  '/favicon.ico',
   '/icon.svg'
 ];
 
