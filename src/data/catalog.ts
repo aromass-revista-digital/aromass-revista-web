@@ -1,12 +1,12 @@
 import { Campaign, PointsLevel, Product, Reseller } from '../types.ts';
 
-// Rutas de imágenes de alta fidelidad generadas
+// Rutas de imágenes accesibles en desarrollo y en build de Netlify (/public/images/)
 export const IMAGES = {
-  coverHero: '/src/assets/images/aromass_cover_hero_1794197777958.jpg',
-  sprayRoom: '/src/assets/images/aromass_spray_room_1794197777239.jpg',
-  reedDiffuser: '/src/assets/images/aromass_reed_diffuser_1794197778178.jpg',
-  autoRefill: '/src/assets/images/aromass_auto_refill_1794197778520.jpg',
-  linenMist: '/src/assets/images/aromass_linen_mist_1794197778901.jpg',
+  coverHero: '/images/aromass_cover_hero.jpg',
+  sprayRoom: '/images/aromass_spray_room.jpg',
+  reedDiffuser: '/images/aromass_reed_diffuser.jpg',
+  autoRefill: '/images/aromass_auto_refill.jpg',
+  linenMist: '/images/aromass_linen_mist.jpg',
 };
 
 export const CATEGORIES = [

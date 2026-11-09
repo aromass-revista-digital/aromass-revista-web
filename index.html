@@ -2,13 +2,32 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=5.0" />
     <title>AROMASS — Revista Digital Interactiva</title>
     <meta name="description" content="Catálogo interactivo y revista digital de fragancias y aromatización con pedidos por WhatsApp, gestión de revendedores y experiencia 3D." />
+    
+    <!-- PWA & Mobile Meta Tags -->
+    <meta name="theme-color" content="#92400E" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="AROMASS" />
+    <meta name="application-name" content="AROMASS" />
+    <meta name="format-detection" content="telephone=no" />
+    
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/pwa-192x192.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+    <!-- OpenGraph & Twitter Cards -->
     <meta property="og:title" content="AROMASS — Revista Digital Interactiva" />
     <meta property="og:description" content="Catálogo interactivo y revista digital de fragancias y aromatización con pedidos por WhatsApp, gestión de revendedores y experiencia 3D." />
     <meta property="og:type" content="website" />
+    <meta property="og:image" content="/images/aromass_cover_hero.jpg" />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="/images/aromass_cover_hero.jpg" />
+
     <link rel="stylesheet" href="/src/index.css" />
   </head>
   <body>
